@@ -7427,3 +7427,72 @@ a.anchor-link {
     display: block;
   }
 }
+.jp-Mermaid:not(.jp-RenderedMermaid) {
+  display: none;
+}
+
+.jp-RenderedMermaid {
+  overflow: auto;
+  display: flex;
+}
+
+.jp-RenderedMermaid.jp-mod-warning {
+  width: auto;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: var(--jp-border-width) solid var(--jp-warn-color2);
+  border-radius: var(--jp-border-radius);
+  color: var(--jp-ui-font-color1);
+  font-size: var(--jp-ui-font-size1);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.jp-RenderedMermaid figure {
+  margin: 0;
+  overflow: auto;
+  max-width: 100%;
+}
+
+.jp-RenderedMermaid img {
+  max-width: 100%;
+}
+
+.jp-RenderedMermaid-Details > pre {
+  margin-top: 1em;
+}
+
+.jp-RenderedMermaid-Summary {
+  color: var(--jp-warn-color2);
+}
+
+.jp-RenderedMermaid:not(.jp-mod-warning) pre {
+  display: none;
+}
+
+.jp-RenderedMermaid-Summary > pre {
+  display: inline-block;
+  white-space: normal;
+}
+
+
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.copy-button:hover {
+  background-color: #45a049;
+}
+.highlight.hl-ipython3 {
+  position: relative; /* Ensure the code block container is positioned relative for the button to be positioned absolute within it */
+}
