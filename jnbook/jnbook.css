@@ -7495,4 +7495,6 @@ a.anchor-link {
 }
 .highlight.hl-ipython3 {
   position: relative; /* Ensure the code block container is positioned relative for the button to be positioned absolute within it */
+}.highlight.hl-r {
+  position: relative; /* Ensure the code block container is positioned relative for the button to be positioned absolute within it */
 }
